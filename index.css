@@ -1,40 +1,67 @@
-/* we created the main container with 3 columns */
+body{
+  margin: 0px;
+
+}
+
+.addSection{
+  padding: 10px;
+}
+
 #mainContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* column-gap: 10px;
-    row-gap: 10px; */
-    gap: 10px;
-    margin-bottom: 20px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* column-gap: 10px;
+  row-gap: 10px; */
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.secondryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  text-align: center;
+  position:relative;
+  padding: 10px;
+}
+
+.secondryContainer img{
+  width: 80px;
+height: 80px;
+}
+
+#delet{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.secondryContainer{
+  background-color: coral;
+}
+body{
+  background-color: darkgreen;
   
-  .frotclass {
-   border-width: thick;
-    
-
-  }
-  /* we made the page responsive by changing the grid-template-columns from having 3 columns to 2 cloumns only when the screen size go below 600px  */
-  @media (max-width: 600px) {
-    #mainContainer {
-        
-      grid-template-columns: 1fr 1fr;
-        
-    }
-  }
-  /* we made the page responsive by changing the grid-template-columns from having 2 columns to 1 cloumn1 only when the screen size go below 400px  */
-  @media (max-width: 400px) {
-    #mainContainer {
-      grid-template-columns: 1fr;
-    }
-  }
-.img{
-width: 180;
-height: 180;
 }
-.h1{
-    text-align: center;
-}
-.body{
-    background-color: aquamarine;
+.hh{
+  color: white;
+  text-align: center;
+  background-color: orangered;
+  padding: 10px;
 }
 
+/* we made the page responsive by changing the grid-template-columns from having 3 columns to 2 cloumns only when the screen size go below 600px  */
+@media (max-width: 600px) {
+  #mainContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* we made the page responsive by changing the grid-template-columns from having 2 columns to 1 cloumn1 only when the screen size go below 400px  */
+
+@media (max-width: 400px) {
+  #mainContainer {
+    grid-template-columns: 1fr;
+  }
+}
